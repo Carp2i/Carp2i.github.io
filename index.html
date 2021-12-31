@@ -21,16 +21,126 @@
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
     KEEP.hexo_config = {"hostname":"carp2i.github.io","root":"/","language":"zh-CH"};
-    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#66CCFF","avatar":"https://pic.imgdb.cn/item/61ce77ac2ab3f51d9161b847.jpg","favicon":"https://pic.imgdb.cn/item/61ce77ac2ab3f51d9161b847.jpg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Car_pe Diem."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#66CCFF","avatar":"https://pic.imgdb.cn/item/61ce77ac2ab3f51d9161b847.jpg","favicon":"https://pic.imgdb.cn/item/61ce77ac2ab3f51d9161b847.jpg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Car_pe Diem."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
-<meta name="generator" content="Hexo 6.0.0"></head>
+<meta name="generator" content="Hexo 6.0.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
 <div class="progress-bar-container">
-    
-        <span class="scroll-progress-bar"></span>
     
 
     
@@ -132,7 +242,7 @@
                             <a class="active"
                                href="/"
                             >
-                                HOME
+                                首頁
                             </a>
                         </li>
                     
@@ -140,7 +250,7 @@
                             <a class=""
                                href="/archives"
                             >
-                                ARCHIVES
+                                歸檔
                             </a>
                         </li>
                     
@@ -148,7 +258,7 @@
                             <a class=""
                                href="/categories"
                             >
-                                CATEGORIES
+                                分類
                             </a>
                         </li>
                     
@@ -156,7 +266,7 @@
                             <a class=""
                                href="/tags"
                             >
-                                TAGS
+                                標籤
                             </a>
                         </li>
                     
@@ -164,7 +274,7 @@
                             <a class=""
                                href="/links"
                             >
-                                LINKS
+                                友鏈
                             </a>
                         </li>
                     
@@ -172,7 +282,7 @@
                             <a class=""
                                href="/about"
                             >
-                                ABOUT
+                                關於
                             </a>
                         </li>
                     
@@ -180,7 +290,7 @@
                             <a class=""
                                href="/changelog"
                             >
-                                CHANGELOG
+                                日誌
                             </a>
                         </li>
                     
@@ -207,37 +317,37 @@
             
                 <li class="drawer-menu-item flex-center">
                     <a class="active"
-                       href="/">HOME</a>
+                       href="/">首頁</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/archives">ARCHIVES</a>
+                       href="/archives">歸檔</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/categories">CATEGORIES</a>
+                       href="/categories">分類</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/tags">TAGS</a>
+                       href="/tags">標籤</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/links">LINKS</a>
+                       href="/links">友鏈</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/about">ABOUT</a>
+                       href="/about">關於</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/changelog">CHANGELOG</a>
+                       href="/changelog">日誌</a>
                 </li>
             
         </ul>
@@ -257,6 +367,59 @@
                 
                     <div class="home-content-container fade-in-down-animation">
     <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2021/12/31/Test/">
+                        Mathjax Test
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        
+
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Dec 31 2021 23:27:02 GMT+0800">2021-12-31</span></span>
+        
+            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/categories/Mathjax/">Mathjax</a>&nbsp;
+                        </li>
+                    
+                    
+                </ul>
+            </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fas fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Mathjax/">Mathjax</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2021/12/31/Test/">繼續閱讀...&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
         
             <li class="home-article-item">
 
@@ -306,7 +469,7 @@ Arthur Samuel: “the field of study that gives computers the ability to learn w
         
     </div>
 
-    <a href="/2021/12/31/01ML/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    <a href="/2021/12/31/01ML/">繼續閱讀...&nbsp;<i class="fas fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -334,7 +497,7 @@ Arthur Samuel: “the field of study that gives computers the ability to learn w
         
     </div>
 
-    <a href="/2021/12/31/hello-world/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    <a href="/2021/12/31/hello-world/">繼續閱讀...&nbsp;<i class="fas fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -366,11 +529,11 @@ Arthur Samuel: “the field of study that gives computers the ability to learn w
               <span>2020</span>
               -
             
-            2021&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Carpe Tu</a>
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Carpe Tu</a>
         </div>
         
         <div class="theme-info info-item">
-            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+            <a target="_blank" href="https://hexo.io">Hexo</a> 框架&nbsp;|&nbsp;主題&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
         </div>
         
         
@@ -444,7 +607,7 @@ Arthur Samuel: “the field of study that gives computers the ability to learn w
                 <input autocomplete="off"
                        autocorrect="off"
                        autocapitalize="off"
-                       placeholder="Search..."
+                       placeholder="搜尋..."
                        spellcheck="false"
                        type="search"
                        class="search-input"
