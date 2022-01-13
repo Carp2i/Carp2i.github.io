@@ -9,7 +9,7 @@
     
     <title>
         
-            02_文件操作 |
+            02_C\C++文件操作 |
         
         Carpe&#39;s Blog
     </title>
@@ -26,119 +26,7 @@
     KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#66CCFF","avatar":"https://pic.imgdb.cn/item/61ce77ac2ab3f51d9161b847.jpg","favicon":"https://pic.imgdb.cn/item/61ce77ac2ab3f51d9161b847.jpg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Car_pe Diem."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
   </script>
-<meta name="generator" content="Hexo 6.0.0"><style>mjx-container[jax="SVG"] {
-  direction: ltr;
-}
-
-mjx-container[jax="SVG"] > svg {
-  overflow: visible;
-}
-
-mjx-container[jax="SVG"][display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-mjx-container[jax="SVG"][justify="left"] {
-  text-align: left;
-}
-
-mjx-container[jax="SVG"][justify="right"] {
-  text-align: right;
-}
-
-g[data-mml-node="merror"] > g {
-  fill: red;
-  stroke: red;
-}
-
-g[data-mml-node="merror"] > rect[data-background] {
-  fill: yellow;
-  stroke: none;
-}
-
-g[data-mml-node="mtable"] > line[data-line] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > rect[data-frame] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > .mjx-dashed {
-  stroke-dasharray: 140;
-}
-
-g[data-mml-node="mtable"] > .mjx-dotted {
-  stroke-linecap: round;
-  stroke-dasharray: 0,140;
-}
-
-g[data-mml-node="mtable"] > svg {
-  overflow: visible;
-}
-
-[jax="SVG"] mjx-tool {
-  display: inline-block;
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-[jax="SVG"] mjx-tool > mjx-tip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-mjx-tool > mjx-tip {
-  display: inline-block;
-  padding: .2em;
-  border: 1px solid #888;
-  font-size: 70%;
-  background-color: #F8F8F8;
-  color: black;
-  box-shadow: 2px 2px 5px #AAAAAA;
-}
-
-g[data-mml-node="maction"][data-toggle] {
-  cursor: pointer;
-}
-
-mjx-status {
-  display: block;
-  position: fixed;
-  left: 1em;
-  bottom: 1em;
-  min-width: 25%;
-  padding: .2em .4em;
-  border: 1px solid #888;
-  font-size: 90%;
-  background-color: #F8F8F8;
-  color: black;
-}
-
-foreignObject[data-mjx-xml] {
-  font-family: initial;
-  line-height: normal;
-  overflow: visible;
-}
-
-.MathJax path {
-  stroke-width: 3;
-}
-
-mjx-container[display="true"] {
-  overflow: auto hidden;
-}
-
-mjx-container[display="true"] + br {
-  display: none;
-}
-</style></head>
+<meta name="generator" content="Hexo 6.0.0"></head>
 
 
 <body>
@@ -301,7 +189,7 @@ mjx-container[display="true"] + br {
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">02_文件操作</span>
+            <span class="title-hover-animation">02_C\C++文件操作</span>
         </div>
 
         
@@ -329,11 +217,7 @@ mjx-container[display="true"] + br {
             <ul>
                 
                     <li>
-                        <a href="/categories/program-contest/">program contest</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        &gt; <a href="/categories/program-contest/language-learning/">language learning</a>&nbsp;
+                        <a href="/categories/language-learning/">language learning</a>&nbsp;
                     </li>
                 
             </ul>
@@ -355,7 +239,7 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>574 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>610 字</span>
         </span>
     
     
@@ -389,13 +273,13 @@ mjx-container[display="true"] + br {
 <li>返回值：文件指针，指向被打开文件</li>
 </ul>
 <h3 id="文件打开模式"><a href="#文件打开模式" class="headerlink" title="文件打开模式"></a>文件打开模式</h3><p><img src="https://pic.imgdb.cn/item/61dfc1f82ab3f51d913f1d7b.jpg"></p>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><h4 id="读入文件内容"><a href="#读入文件内容" class="headerlink" title="读入文件内容"></a>读入文件内容</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">freopen</span>(<span class="string">"data.in"</span>,<span class="string">"r"</span>, stdin);</span><br><span class="line"><span class="comment">// data.in 就是读取的文件名，要和可执行文件放在同一目录下</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><h4 id="读入文件内容"><a href="#读入文件内容" class="headerlink" title="读入文件内容"></a>读入文件内容</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">freopen</span>(<span class="string">&quot;data.in&quot;</span>,<span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line"><span class="comment">// data.in 就是读取的文件名，要和可执行文件放在同一目录下</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="输出到文件"><a href="#输出到文件" class="headerlink" title="输出到文件"></a>输出到文件</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">freopen</span>(<span class="string">"data.out"</span>,<span class="string">"w"</span>,stdout);</span><br><span class="line"><span class="comment">// data.out 就是输出文件到文件名，和可执行文件在统一目录下</span></span><br></pre></td></tr></table></figure>
+<h4 id="输出到文件"><a href="#输出到文件" class="headerlink" title="输出到文件"></a>输出到文件</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">freopen</span>(<span class="string">&quot;data.out&quot;</span>,<span class="string">&quot;w&quot;</span>,stdout);</span><br><span class="line"><span class="comment">// data.out 就是输出文件到文件名，和可执行文件在统一目录下</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="关闭标准输入-输出流"><a href="#关闭标准输入-输出流" class="headerlink" title="关闭标准输入/输出流"></a>关闭标准输入/输出流</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">fclose</span>(stdin);</span><br><span class="line"><span class="built_in">fclose</span>(stdout);</span><br></pre></td></tr></table></figure>
 
-<h4 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>{</span><br><span class="line">  <span class="built_in">freopen</span>(<span class="string">"data.in"</span>, <span class="string">"r"</span>, stdin);</span><br><span class="line">  <span class="built_in">freopen</span>(<span class="string">"data.out"</span>, <span class="string">"w"</span>, stdout);</span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">  中间的代码不需要改变，直接使用 cin 和 cout 即可</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="built_in">fclose</span>(stdin);</span><br><span class="line">  <span class="built_in">fclose</span>(stdout);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h4 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">  <span class="built_in">freopen</span>(<span class="string">&quot;data.in&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line">  <span class="built_in">freopen</span>(<span class="string">&quot;data.out&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout);</span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">  中间的代码不需要改变，直接使用 cin 和 cout 即可</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="built_in">fclose</span>(stdin);</span><br><span class="line">  <span class="built_in">fclose</span>(stdout);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="fopen函数（选读）"><a href="#fopen函数（选读）" class="headerlink" title="fopen函数（选读）"></a>fopen函数（选读）</h2><p>函数大致与 freopen 相同，函数打开指定文件并返回打开文件的指针</p>
 <h3 id="函数原型"><a href="#函数原型" class="headerlink" title="函数原型"></a>函数原型</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">FILE* <span class="title">fopen</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span>* path, <span class="keyword">const</span> <span class="keyword">char</span>* mode)</span></span></span><br></pre></td></tr></table></figure>
@@ -405,14 +289,14 @@ mjx-container[display="true"] + br {
 <li>fscanf/fprintf</li>
 <li>fgets/fputs</li>
 </ul>
-<h3 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">FILE *in, *out;  <span class="comment">// 定义文件指针</span></span><br><span class="line">in = <span class="built_in">fopen</span>(<span class="string">"data.in"</span>, <span class="string">"r"</span>);</span><br><span class="line">out = <span class="built_in">fopen</span>(<span class="string">"data.out"</span>, <span class="string">"w"</span>);</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">do what you want to do</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="built_in">fclose</span>(stdin);</span><br><span class="line"><span class="built_in">fclose</span>(stdout);</span><br></pre></td></tr></table></figure>
+<h3 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">FILE *in, *out;  <span class="comment">// 定义文件指针</span></span><br><span class="line">in = <span class="built_in">fopen</span>(<span class="string">&quot;data.in&quot;</span>, <span class="string">&quot;r&quot;</span>);</span><br><span class="line">out = <span class="built_in">fopen</span>(<span class="string">&quot;data.out&quot;</span>, <span class="string">&quot;w&quot;</span>);</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">do what you want to do</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="built_in">fclose</span>(stdin);</span><br><span class="line"><span class="built_in">fclose</span>(stdout);</span><br></pre></td></tr></table></figure>
 
-<h2 id="C-的-ifstream-ofstream-文件输入输出流"><a href="#C-的-ifstream-ofstream-文件输入输出流" class="headerlink" title="C++ 的 ifstream/ofstream 文件输入输出流"></a>C++ 的 ifstream/ofstream 文件输入输出流</h2><h3 id="使用方法-1"><a href="#使用方法-1" class="headerlink" title="使用方法"></a>使用方法</h3><h4 id="读入文件内容："><a href="#读入文件内容：" class="headerlink" title="读入文件内容："></a>读入文件内容：</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ifstream <span class="title">fin</span><span class="params">(<span class="string">"data.in"</span>)</span></span>;</span><br><span class="line"><span class="comment">// data.in 就是读取文件的相对位置或绝对位置</span></span><br></pre></td></tr></table></figure>
-<h4 id="输出到文件："><a href="#输出到文件：" class="headerlink" title="输出到文件："></a>输出到文件：</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ofstream <span class="title">fout</span><span class="params">(<span class="string">"data.out"</span>)</span></span>;</span><br><span class="line"><span class="comment">// data.out 就是输出文件的相对位置或绝对位置</span></span><br></pre></td></tr></table></figure>
+<h2 id="C-的-ifstream-ofstream-文件输入输出流"><a href="#C-的-ifstream-ofstream-文件输入输出流" class="headerlink" title="C++ 的 ifstream/ofstream 文件输入输出流"></a>C++ 的 ifstream/ofstream 文件输入输出流</h2><h3 id="使用方法-1"><a href="#使用方法-1" class="headerlink" title="使用方法"></a>使用方法</h3><h4 id="读入文件内容："><a href="#读入文件内容：" class="headerlink" title="读入文件内容："></a>读入文件内容：</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ifstream <span class="title">fin</span><span class="params">(<span class="string">&quot;data.in&quot;</span>)</span></span>;</span><br><span class="line"><span class="comment">// data.in 就是读取文件的相对位置或绝对位置</span></span><br></pre></td></tr></table></figure>
+<h4 id="输出到文件："><a href="#输出到文件：" class="headerlink" title="输出到文件："></a>输出到文件：</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ofstream <span class="title">fout</span><span class="params">(<span class="string">&quot;data.out&quot;</span>)</span></span>;</span><br><span class="line"><span class="comment">// data.out 就是输出文件的相对位置或绝对位置</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="关闭标准输入-输出流-1"><a href="#关闭标准输入-输出流-1" class="headerlink" title="关闭标准输入/输出流"></a>关闭标准输入/输出流</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fin.<span class="built_in">close</span>()</span><br><span class="line">fout.<span class="built_in">close</span>()</span><br></pre></td></tr></table></figure>
 
-<h4 id="模板-1"><a href="#模板-1" class="headerlink" title="模板"></a>模板</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"><span class="function">ifstream <span class="title">fin</span><span class="params">(<span class="string">"data.in"</span>)</span></span>;</span><br><span class="line"><span class="function">ofstream <span class="title">fout</span><span class="params">(<span class="string">"data.out"</span>)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>{</span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">  中间的代码改变 cin 为 fin ，cout 为 fout 即可</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  fin.<span class="built_in">close</span>();</span><br><span class="line">  fout.<span class="built_in">close</span>();</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h4 id="模板-1"><a href="#模板-1" class="headerlink" title="模板"></a>模板</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"><span class="function">ifstream <span class="title">fin</span><span class="params">(<span class="string">&quot;data.in&quot;</span>)</span></span>;</span><br><span class="line"><span class="function">ofstream <span class="title">fout</span><span class="params">(<span class="string">&quot;data.out&quot;</span>)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">  中间的代码改变 cin 为 fin ，cout 为 fout 即可</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  fin.<span class="built_in">close</span>();</span><br><span class="line">  fout.<span class="built_in">close</span>();</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         </div>
 
         
