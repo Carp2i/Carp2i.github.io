@@ -9,7 +9,7 @@
     
     <title>
         
-            numpy+matplotlib+pandas |
+            NumPy_Pandas_Matplotlib |
         
         Carpe&#39;s Blog
     </title>
@@ -301,7 +301,7 @@ mjx-container[display="true"] + br {
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">numpy+matplotlib+pandas</span>
+            <span class="title-hover-animation">NumPy_Pandas_Matplotlib</span>
         </div>
 
         
@@ -341,15 +341,7 @@ mjx-container[display="true"] + br {
             <ul>
                 
                     <li>
-                        <a href="/tags/Prepare-for-Machine-Learning/">Prepare for Machine Learning</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/tags/Python-Learning/">Python Learning</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/tags/NumPy/">NumPy</a>&nbsp;
+                        <a href="/tags/NumPy/">NumPy</a>&nbsp;
                     </li>
                 
                     <li>
@@ -360,6 +352,14 @@ mjx-container[display="true"] + br {
                         | <a href="/tags/Pandas/">Pandas</a>&nbsp;
                     </li>
                 
+                    <li>
+                        | <a href="/tags/Python-Learning/">Python Learning</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Prepare-for-Machine-Learning/">Prepare for Machine Learning</a>&nbsp;
+                    </li>
+                
             </ul>
         </span>
     
@@ -367,12 +367,12 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>243 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.5k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>1 分钟</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>6 分钟</span>
         </span>
     
     
@@ -384,7 +384,8 @@ mjx-container[display="true"] + br {
         
 
         <div class="article-content markdown-body">
-            <h1 id="jupyter"><a href="#jupyter" class="headerlink" title="jupyter"></a>jupyter</h1><ul>
+            <p>在进修这篇前，请先学习前面的 <a href="https://carp2i.github.io/Tutorial/Python_tutorial/">Python_tutorial</a></p>
+<h1 id="jupyter"><a href="#jupyter" class="headerlink" title="jupyter"></a>jupyter</h1><ul>
 <li>居于<strong>网页</strong>的用于交互计算的应用程序。其可被应用于<u>全过程</u>计算： 开发、文档编写、代码运行和结果展示<ul>
 <li>编程时具有<strong>语法高亮</strong>、<em>缩进</em>、<em>tab补全</em>的功能</li>
 <li>可直接通过浏览器运行代码，同时在代码块下方展示运行结果。</li>
@@ -394,40 +395,69 @@ mjx-container[display="true"] + br {
 </li>
 <li>其实可以直接用vscode跑ipynb文件</li>
 </ul>
-<h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1><ul>
-<li>Numerical Python<ul>
-<li>开源对python科学计算库</li>
-<li>使用Numpy可以方便对使用数组、矩阵运算</li>
-<li>包含<u>线性代数、傅立叶变换、随机数生成</u>等大量函数</li>
-</ul>
-</li>
-</ul>
-<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
-<li>对同样对数值计算任务，使用Numpy比Python代码实现优点：<ul>
-<li>代码更简洁</li>
-<li>性能更高效: NunPy的大部分代码由C语言实现</li>
-</ul>
-</li>
-<li>Numpy是Python各种数据科学类库的基础库：<ul>
-<li>such as: Scipy, Scikit-Learn, TensorFlow, pandas</li>
-</ul>
-</li>
-</ul>
+<h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1><p>学习 NumPy 所看的教程，是一个 YouTuber(<a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCwRXb5dUK4cvsHbx-rGzSgw"><strong>Derek Banas</strong></a>) 的 <a class="link" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=8Y0qQEh7dJg&list=WL&index=2&t=1205s">Tutorial<i class="fas fa-external-link-alt"></i></a></p>
+<p>Tutorial给的代码 Github： <a class="link" target="_blank" rel="noopener" href="https://github.com/derekbanas/NumPy-Tutorial">https://github.com/derekbanas/NumPy-Tutorial<i class="fas fa-external-link-alt"></i></a><br>作者自己的写的ipynb文件： <a class="link" target="_blank" rel="noopener" href="https://github.com/Carp2i/NumPy-Pandas-Matplotlib/tree/master/NumPy">https://github.com/Carp2i/NumPy-Pandas-Matplotlib/tree/master/NumPy<i class="fas fa-external-link-alt"></i></a></p>
+<p>其中 <em>爱因斯坦求和</em>， <em>克罗内克积</em> <em>条件数</em> <em>Crammer法则的落地</em> <em>NumPy的经济学包</em></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># import</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pylab <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> random</span><br></pre></td></tr></table></figure>
 
+<h2 id="Creating"><a href="#Creating" class="headerlink" title="Creating"></a>Creating</h2><h3 id="创建列表"><a href="#创建列表" class="headerlink" title="创建列表"></a>创建列表</h3><ol>
+<li><p>从 list 生成 array</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">list_1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">np_arr_1 = np.array(list_1, dtype=np.int8)</span><br></pre></td></tr></table></figure></li>
+<li><p>从 <strong>函数生成</strong></p>
+<blockquote>
+<p>这里许多函数（方法）都与 Matlab 相同</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">np.arrange(<span class="number">1</span>, <span class="number">10</span>)           <span class="comment"># 生成 [1, 10) 的自然数列</span></span><br><span class="line">np.linspace(<span class="number">0</span>, <span class="number">5</span>, <span class="number">6</span>)        <span class="comment"># 生成 [0, 5] 包含首尾，平均分段 6 个点的阵列</span></span><br><span class="line">np.zeros(<span class="number">4</span>)                 <span class="comment"># 生成 长度为4的一维全零数组</span></span><br><span class="line">np.ones((<span class="number">2</span>, <span class="number">3</span>))             <span class="comment"># 生成 2x3 的数组</span></span><br><span class="line"></span><br><span class="line">np.random.randint(<span class="number">10</span>, <span class="number">50</span>, <span class="number">5</span>)            <span class="comment"># 生成[10, 50) 长度为 5 的一维矩阵</span></span><br><span class="line">np.random.randint(<span class="number">10</span>, <span class="number">50</span>, size=(<span class="number">2</span>, <span class="number">3</span>))  <span class="comment"># 生成[10, 50) 形状为 2x3 的二维矩阵</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查看数组属性"><a href="#查看数组属性" class="headerlink" title="查看数组属性"></a>查看数组属性</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># array 的 数据类型 跟 数组size 的信息，以属性的形式保存</span></span><br><span class="line">arr.size    <span class="comment"># 返回数组的形状</span></span><br><span class="line">arr.dtype   <span class="comment"># 返回元素类型</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查看文件的使用方法"><a href="#查看文件的使用方法" class="headerlink" title="查看文件的使用方法"></a>查看文件的使用方法</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.random.randint?</span><br></pre></td></tr></table></figure>
+
+<h2 id="Slicing-amp-Indexes"><a href="#Slicing-amp-Indexes" class="headerlink" title="Slicing & Indexes"></a>Slicing &amp; Indexes</h2><h3 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h3><p>索引与切片 永远重要</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 同样用 list 的方式索引元素值(中括号)</span></span><br><span class="line">arr[<span class="number">0</span>, <span class="number">0</span>] = <span class="number">2</span></span><br><span class="line"><span class="comment"># 同样方法可以用 itemset 方法实现</span></span><br><span class="line">arr.itemset((<span class="number">0</span>,<span class="number">1</span>), <span class="number">1</span>)</span><br><span class="line"><span class="comment"># 但这种时候就必须用 tuple 来表示元素位置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 两种相同的索引方式</span></span><br><span class="line">arr[<span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line">arr.item(<span class="number">0</span>, <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># take 方法取出，以 list 为index的元素组成的 List， 元素编号为 行优先存储</span></span><br><span class="line">np.take(arr, [<span class="number">0</span>, <span class="number">3</span>, <span class="number">6</span>])</span><br><span class="line"><span class="comment"># put 的第二个可变参数 传入替代的元素位置 第三个可变参数传入元素值</span></span><br><span class="line">np.put(arr, [<span class="number">0</span>, <span class="number">3</span>, <span class="number">6</span>], [<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 类Matlab的生成式</span></span><br><span class="line">arr[:<span class="number">5</span>:<span class="number">2</span>]   <span class="comment"># [0:5) 步长为2的取切片</span></span><br><span class="line"><span class="comment"># 取出了二位矩阵的第二列</span></span><br><span class="line">arr[:, <span class="number">1</span>] </span><br><span class="line">arr_[::-<span class="number">1</span>] <span class="comment"># 按行倒序输出</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 索引中，用[]在中括号中加入条件，最后会 按行优先 输出符合条件的元素加入最后数组</span></span><br><span class="line">evens = arr[arr % <span class="number">2</span> ==<span class="number">0</span>]</span><br><span class="line"><span class="comment"># 最后会赛选出 偶数 元素</span></span><br><span class="line"></span><br><span class="line">np.unique(arr)</span><br><span class="line"><span class="comment"># 有序，消除重复</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Reshape-Arrays"><a href="#Reshape-Arrays" class="headerlink" title="Reshape Arrays"></a>Reshape Arrays</h2><h3 id="reshape-方法"><a href="#reshape-方法" class="headerlink" title="reshape 方法"></a>reshape 方法</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.reshape((<span class="number">1</span>, <span class="number">9</span>))</span><br></pre></td></tr></table></figure>
+<h3 id="resize-方法"><a href="#resize-方法" class="headerlink" title="resize 方法"></a>resize 方法</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.resize(np_m_arr_1, (<span class="number">2</span>,<span class="number">5</span>))</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他变换"><a href="#其他变换" class="headerlink" title="其他变换"></a>其他变换</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 二维转置</span></span><br><span class="line">arr.transpose()</span><br><span class="line"><span class="comment"># 交换坐标系</span></span><br><span class="line">arr.swapaxes(<span class="number">0</span>, <span class="number">1</span>)</span><br><span class="line"><span class="comment"># flatten方法，如果不额外输入参数，默认行优先，参数设置为 ‘F’ 则列优先</span></span><br><span class="line">arr.flatten(<span class="string">'F'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 矩阵排序</span></span><br><span class="line">arr.sort(axis = <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Stacking-amp-Splitting"><a href="#Stacking-amp-Splitting" class="headerlink" title="Stacking & Splitting"></a>Stacking &amp; Splitting</h2><h3 id="Stacking"><a href="#Stacking" class="headerlink" title="Stacking"></a>Stacking</h3><p>把矩阵横着或者竖着堆起来</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">arr1 = np.random.randit(<span class="number">10</span>, size=(<span class="number">2</span>,<span class="number">2</span>))</span><br><span class="line">arr2 = np.random.randit(<span class="number">10</span>, size=(<span class="number">2</span>,<span class="number">2</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 竖直/水平 堆叠stack</span></span><br><span class="line">np.vstack((arr1, arr2))</span><br><span class="line">np.hstack((arr1, arr2))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除第二行的所有元素</span></span><br><span class="line">np.delete(arr1, <span class="number">1</span>, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 另一种 竖直/水平 堆叠</span></span><br><span class="line"><span class="comment"># 注意输入得是 tuple</span></span><br><span class="line">np.row_stack((arr1, arr2))</span><br><span class="line">np.column_stack((arr1, arr2))</span><br><span class="line"></span><br><span class="line">arr3 = np.random.randint(<span class="number">10</span>, size=(<span class="number">2</span>,<span class="number">10</span>))</span><br><span class="line">np.hsplit(arr3,(<span class="number">2</span>,<span class="number">4</span>)) <span class="comment"># 会删去数组的前 2x4 的元素</span></span><br><span class="line">np.vsplit(....)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Copying"><a href="#Copying" class="headerlink" title="Copying"></a>Copying</h2><ol>
+<li><strong>直接赋值</strong>的时候<strong>不会形成复制</strong><br>根据Python的机理，直接赋值，只会让两个标签指向同一内容</li>
+</ol>
+<ul>
+<li>如果利用其中一个元素修改内容，另一个索引得到的结果也会修改</li>
+</ul>
+<ol start="2">
+<li>正确的copy方法<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr2 = arr1.copy()</span><br><span class="line"><span class="comment"># 只是内容上的复制</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="Basic-Math"><a href="#Basic-Math" class="headerlink" title="Basic Math"></a>Basic Math</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">np.add(arr1, arr2)  <span class="comment"># 里面是常数也行，</span></span><br><span class="line"><span class="comment"># 类似的算术 .substract .multiply .divide 按位加减乘除</span></span><br><span class="line">np.remainder(arr1)  <span class="comment"># 取余数</span></span><br><span class="line">np.power(arr1, arr2)  <span class="comment"># 按位 幂乘，arr2为幂</span></span><br><span class="line">np.sqrt(arr)        <span class="comment"># 开方, cbrt()立方根</span></span><br><span class="line"></span><br><span class="line">np.gcd.reduce([<span class="number">9</span>, <span class="number">12</span>, <span class="number">15</span>])    <span class="comment"># 求list所有元素的 最大公约数</span></span><br><span class="line">np.lcm.reduce([<span class="number">9</span>, <span class="number">12</span>, <span class="number">15</span>])    <span class="comment"># 求list所有元素的 最小公倍数</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Reading-from-files"><a href="#Reading-from-files" class="headerlink" title="Reading from files"></a>Reading from files</h2><p>文件读取永远重要</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> genfromtxt</span><br><span class="line"></span><br><span class="line"><span class="comment"># pandas 读取方法</span></span><br><span class="line">ic_sales = pd.read_csv(<span class="string">'icreamsales.csv'</span>).to_numpy()</span><br><span class="line">ic_sales</span><br><span class="line"><span class="comment"># numpy 读取方法 这种写法特别少</span></span><br><span class="line">ic_sales2 = genfromtxt(<span class="string">'icecreamsales.csv'</span>, delimiter=<span class="string">','</span>)</span><br><span class="line">ic_sales2 = [row[~np.isnan(row)]] <span class="keyword">for</span> row <span class="keyword">in</span> ic_sales2]</span><br></pre></td></tr></table></figure>
+
+<h2 id="Statistics-Function"><a href="#Statistics-Function" class="headerlink" title="Statistics Function"></a>Statistics Function</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">arr1 = np.arrange(<span class="number">1</span>, <span class="number">6</span>)</span><br><span class="line">np.mean(arr) <span class="comment"># .median .average .std .var</span></span><br><span class="line">np.var([<span class="number">4</span>, <span class="number">6</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">3</span>])</span><br><span class="line"><span class="comment"># nanmedian, nanmean, nanstd, nanvar. just ingore nan</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">np.percentile(ic_sales, <span class="number">50</span>, axis=<span class="number">0</span>)</span><br><span class="line">ic_sales[:, <span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">np.corrcoef(ic_sales[:, <span class="number">0</span>], ic_sales[:, <span class="number">1</span>]) <span class="comment"># correlation coefficent</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Trig-Functions"><a href="#Trig-Functions" class="headerlink" title="Trig Functions"></a>Trig Functions</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 特地查了一个单词 三角函数</span></span><br><span class="line"><span class="comment"># np.pi pi的值被放在了</span></span><br><span class="line">t_arr = np.linspace(-np.pi, np.pi, <span class="number">200</span>)</span><br><span class="line">plt.plot(t_arr, np.sin(t_arr))  <span class="comment"># 第二个参数也可以改成 cos</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 求反函数的方法</span></span><br><span class="line">np.arctan(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Also arctan2, sinh, cosh, tanh, arcsinh, arccosh, arctanh</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 这个方法是 degree to Rad 角度转弧度</span></span><br><span class="line">np.deg2rad(<span class="number">180</span>)</span><br><span class="line"><span class="comment"># Rad 2 degree</span></span><br><span class="line">np.rad2deg(np.pi)</span><br><span class="line"></span><br><span class="line"><span class="comment"># htpotebyse 三角形求直角边</span></span><br><span class="line">np.hypot(<span class="number">10</span>, <span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linear-Algebra-Function"><a href="#Linear-Algebra-Function" class="headerlink" title="Linear Algebra Function"></a>Linear Algebra Function</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> linalg <span class="keyword">as</span> LA</span><br><span class="line"><span class="comment"># Matrix multiplication with Dot Product</span></span><br><span class="line">np.dot(arr1, arr2)</span><br><span class="line"><span class="comment"># LA的多目标点成，可以接受多个参数，依次点乘</span></span><br><span class="line">LA.multi_dot([arr1, arr2, arr3])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Inner product: 内积</span></span><br><span class="line">np.inner(arr1, arr2)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Tensor Dot Product</span></span><br><span class="line">arr_9 = np.array([[[<span class="number">1</span>, <span class="number">2</span>],</span><br><span class="line">                    [<span class="number">3</span>, <span class="number">4</span>]],</span><br><span class="line">                    [[<span class="number">5</span>, <span class="number">6</span>],</span><br><span class="line">                    [<span class="number">7</span>, <span class="number">8</span>]]])</span><br><span class="line"></span><br><span class="line">arr_10 = np.array([[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>]], dtype=<span class="built_in">object</span>)</span><br><span class="line">np.tensordot(arr_9, arr_10)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成矩阵平方(矩阵乘矩阵)</span></span><br><span class="line">LA.matrix_power(arr, <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Compute eigenvalues</span></span><br><span class="line">LA.eig(arr) <span class="comment"># this version is going to return eigvector, </span></span><br><span class="line">LA.eigvals(arr)   <span class="comment"># return eig value</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Get Vector Norm sqrt(sum(x**2))</span></span><br><span class="line">LA.norm(arr)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Get Multiplicative Inverse of a matrix</span></span><br><span class="line">LA.inv(arr)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Get Condition number of matrix 条件数，矩阵敏感度指标* 有点超纲</span></span><br><span class="line">LA.cond(arr)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Determinates (行列式) are used to compute volume, area, to solve systems</span></span><br><span class="line"><span class="comment"># of equations and more. It is a way u can multiply values in a matrix</span></span><br><span class="line"><span class="comment"># to get 1 number.</span></span><br><span class="line"><span class="comment"># For a matrix to have an inverse its determinate must not equal 0</span></span><br><span class="line"><span class="comment"># det([[a, b], [c, d]]) = a * d - b * c</span></span><br><span class="line"></span><br><span class="line">arr_12 = np.array([[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>]])</span><br><span class="line">LA.det(arr_12)  <span class="comment"># 1*4 - 2*3</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 加试内容： Einstein Summation， Kronecker Products， Crammer Rule</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Saving-amp-Loader"><a href="#Saving-amp-Loader" class="headerlink" title="Saving & Loader"></a>Saving &amp; Loader</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">arr_15 = np.array([[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>]])</span><br><span class="line">np.save(<span class="string">'randarray'</span>, arr_15)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'arr_15\n'</span>, arr_15)</span><br><span class="line">arr_16 = np.load(<span class="string">'randarray.npy'</span>)</span><br><span class="line">arr_16</span><br><span class="line"></span><br><span class="line">np.savetxt(<span class="string">'randcsv.csv'</span>, arr_15)</span><br><span class="line">arr_17 = np.loadtxt(<span class="string">'randcsv.csv'</span>)</span><br><span class="line">arr_17</span><br></pre></td></tr></table></figure>
+
+<h2 id="Comparision-Function"><a href="#Comparision-Function" class="headerlink" title="Comparision Function"></a>Comparision Function</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">carr_1 = np.array([<span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">carr_2 = np.array([<span class="number">3</span>, <span class="number">2</span>])</span><br><span class="line">np.greater_equal(carr_1, carr_2)</span><br><span class="line">np.less_equal(carr_1, carr_2)</span><br><span class="line">np.not_equal(carr_1, carr_2)</span><br><span class="line">np.equal(carr_1, carr_2)</span><br></pre></td></tr></table></figure>
         </div>
 
         
 
         
             <ul class="post-tags-box">
-                
-                    <li class="tag-item">
-                        <a href="/tags/Prepare-for-Machine-Learning/">#Prepare for Machine Learning</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item">
-                        <a href="/tags/Python-Learning/">#Python Learning</a>&nbsp;
-                    </li>
                 
                     <li class="tag-item">
                         <a href="/tags/NumPy/">#NumPy</a>&nbsp;
@@ -439,6 +469,14 @@ mjx-container[display="true"] + br {
                 
                     <li class="tag-item">
                         <a href="/tags/Pandas/">#Pandas</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/Python-Learning/">#Python Learning</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/Prepare-for-Machine-Learning/">#Prepare for Machine Learning</a>&nbsp;
                     </li>
                 
             </ul>
@@ -581,7 +619,7 @@ mjx-container[display="true"] + br {
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#jupyter"><span class="nav-number">1.</span> <span class="nav-text">jupyter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Numpy"><span class="nav-number">2.</span> <span class="nav-text">Numpy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%98%E7%82%B9"><span class="nav-number">2.1.</span> <span class="nav-text">优点</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#jupyter"><span class="nav-number">1.</span> <span class="nav-text">jupyter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Numpy"><span class="nav-number">2.</span> <span class="nav-text">Numpy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating"><span class="nav-number">2.1.</span> <span class="nav-text">Creating</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%88%97%E8%A1%A8"><span class="nav-number">2.1.1.</span> <span class="nav-text">创建列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E6%95%B0%E7%BB%84%E5%B1%9E%E6%80%A7"><span class="nav-number">2.1.2.</span> <span class="nav-text">查看数组属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">2.1.3.</span> <span class="nav-text">查看文件的使用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Slicing-amp-Indexes"><span class="nav-number">2.2.</span> <span class="nav-text">Slicing &amp; Indexes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95"><span class="nav-number">2.2.1.</span> <span class="nav-text">索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%87%E7%89%87"><span class="nav-number">2.2.2.</span> <span class="nav-text">切片</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reshape-Arrays"><span class="nav-number">2.3.</span> <span class="nav-text">Reshape Arrays</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#reshape-%E6%96%B9%E6%B3%95"><span class="nav-number">2.3.1.</span> <span class="nav-text">reshape 方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#resize-%E6%96%B9%E6%B3%95"><span class="nav-number">2.3.2.</span> <span class="nav-text">resize 方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%8F%98%E6%8D%A2"><span class="nav-number">2.3.3.</span> <span class="nav-text">其他变换</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Stacking-amp-Splitting"><span class="nav-number">2.4.</span> <span class="nav-text">Stacking &amp; Splitting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Stacking"><span class="nav-number">2.4.1.</span> <span class="nav-text">Stacking</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Copying"><span class="nav-number">2.5.</span> <span class="nav-text">Copying</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Math"><span class="nav-number">2.6.</span> <span class="nav-text">Basic Math</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reading-from-files"><span class="nav-number">2.7.</span> <span class="nav-text">Reading from files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Statistics-Function"><span class="nav-number">2.8.</span> <span class="nav-text">Statistics Function</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Trig-Functions"><span class="nav-number">2.9.</span> <span class="nav-text">Trig Functions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linear-Algebra-Function"><span class="nav-number">2.10.</span> <span class="nav-text">Linear Algebra Function</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Saving-amp-Loader"><span class="nav-number">2.11.</span> <span class="nav-text">Saving &amp; Loader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Comparision-Function"><span class="nav-number">2.12.</span> <span class="nav-text">Comparision Function</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>
