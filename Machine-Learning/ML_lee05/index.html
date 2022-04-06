@@ -367,12 +367,12 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>397 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>692 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>1 分钟</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>3 分钟</span>
         </span>
     
     
@@ -418,6 +418,58 @@ mjx-container[display="true"] + br {
 <h3 id="parameter-sharing"><a href="#parameter-sharing" class="headerlink" title="parameter sharing"></a>parameter sharing</h3><p>不同位置，同样pattern的感知使用的参数不同。两个 Neuron 相同。</p>
 <p><img src="https://pic.imgdb.cn/item/624c025a239250f7c580aa04.jpg"></p>
 <p>Two Neurons with the same receptive field has a set of neurons</p>
+<p><img src="https://pic.imgdb.cn/item/624cdc78239250f7c5c86d9e.jpg"></p>
+<ul>
+<li>Each receptive field has a set of neurons (e.g., 64 neurons)</li>
+<li>Each receptive field has the neurons with the same set of parameters</li>
+</ul>
+<h3 id="Pooling（池化"><a href="#Pooling（池化" class="headerlink" title="Pooling（池化"></a>Pooling（池化</h3><p>解决图像的缩放的感知问题</p>
+<h4 id="Max-Pooling"><a href="#Max-Pooling" class="headerlink" title="Max Pooling"></a>Max Pooling</h4><p>下采样过程中，感受野里选最大的</p>
+<h4 id="Mean-Pooling"><a href="#Mean-Pooling" class="headerlink" title="Mean Pooling"></a>Mean Pooling</h4><p>选均值</p>
+<h3 id="Convolutional-Layers-Poooling"><a href="#Convolutional-Layers-Poooling" class="headerlink" title="Convolutional Layers + Poooling"></a>Convolutional Layers + Poooling</h3><p><img src="https://pic.imgdb.cn/item/624ce1d3239250f7c5cea0d4.jpg"></p>
+<p>实践中，我们常常在 <strong>卷积层</strong> 后跟上一层 pooling，Pooling 做的事情就是把图片变小。 </p>
+<p>近两年的论文设计中，很多模型都抛弃了 Pooling（运算资源够多，支撑不做 pooling</p>
+<p>但是在近期，图像识别的论文中，出现了大量 Full-convolution 的网络。</p>
+<p><img src="https://pic.imgdb.cn/item/624ce2ad239250f7c5cf9d77.jpg"><br><em>常见CNN</em></p>
+<h1 id="Benefit-of-Convolutional-Layer"><a href="#Benefit-of-Convolutional-Layer" class="headerlink" title="Benefit of Convolutional Layer"></a>Benefit of Convolutional Layer</h1><p><img src="https://pic.imgdb.cn/item/624cdddc239250f7c5ca0f1d.jpg"></p>
+<ul>
+<li>some patterns are much smaller than the whole image.</li>
+<li>the same patterns appear in diff regions</li>
+</ul>
+<h1 id="from-Filter"><a href="#from-Filter" class="headerlink" title="from Filter"></a>from Filter</h1><p><img src="https://pic.imgdb.cn/item/624cde8b239250f7c5cade62.jpg"></p>
+<ol>
+<li>The values in the filters are unknown parameters.</li>
+<li>the output of the filters are called <strong>Feature Map</strong></li>
+</ol>
+<h2 id="Mutiple-Convolutional-Layers"><a href="#Mutiple-Convolutional-Layers" class="headerlink" title="Mutiple Convolutional Layers"></a>Mutiple Convolutional Layers</h2><p><img src="https://pic.imgdb.cn/item/624ce01a239250f7c5ccb3ef.jpg"></p>
+<p><img src="https://pic.imgdb.cn/item/624ce04e239250f7c5ccf132.jpg"></p>
+<h2 id="the-2-version-introduction"><a href="#the-2-version-introduction" class="headerlink" title="the 2 version introduction"></a>the 2 version introduction</h2><table>
+<thead>
+<tr>
+<th>Neron Version</th>
+<th>Filter Version</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Each neuron only considers a receptive field</td>
+<td>There are a set of filters detecting small patterns</td>
+</tr>
+<tr>
+<td>The neurons with different receptive fields share the parameters.</td>
+<td>Each filter convolves over the input image.</td>
+</tr>
+</tbody></table>
+<p>They are same story.</p>
+<h1 id="Application"><a href="#Application" class="headerlink" title="Application:"></a>Application:</h1><h2 id="Alpha-Go"><a href="#Alpha-Go" class="headerlink" title="Alpha Go"></a>Alpha Go</h2><p>把棋盘当成图片</p>
+<h3 id="similarity-between-Go-playing-and-Image"><a href="#similarity-between-Go-playing-and-Image" class="headerlink" title="similarity between Go playing and Image"></a>similarity between Go playing and Image</h3><ul>
+<li><p>Some patterns are much smaller than the whole image</p>
+</li>
+<li><p>The same patterns appear in different regions</p>
+</li>
+</ul>
+<p><img src="https://pic.imgdb.cn/item/624ce353239250f7c5d06ffa.jpg"></p>
+<p>是否使用 Pooling 还得看 <strong>问题的性质是否适合池化</strong>，下围棋不可能下采样</p>
+<h3 id="More-Applications"><a href="#More-Applications" class="headerlink" title="More Applications"></a>More Applications</h3><p><img src="https://pic.imgdb.cn/item/624ce401239250f7c5d13723.jpg"></p>
 
         </div>
 
@@ -571,7 +623,7 @@ mjx-container[display="true"] + br {
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CNN"><span class="nav-number">1.</span> <span class="nav-text">CNN</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Image-Classification"><span class="nav-number">2.</span> <span class="nav-text">Image Classification</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E5%BD%A2%E9%A2%84%E5%A4%84%E7%90%86"><span class="nav-number">2.1.</span> <span class="nav-text">图形预处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E5%83%8F%E6%95%B0%E6%8D%AE%E7%BB%84%E7%BB%87"><span class="nav-number">2.2.</span> <span class="nav-text">图像数据组织</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Observation"><span class="nav-number">2.3.</span> <span class="nav-text">Observation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Simplification"><span class="nav-number">2.4.</span> <span class="nav-text">Simplification</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Receptive-field"><span class="nav-number">2.4.1.</span> <span class="nav-text">Receptive field</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parameter-sharing"><span class="nav-number">2.4.2.</span> <span class="nav-text">parameter sharing</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CNN"><span class="nav-number">1.</span> <span class="nav-text">CNN</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Image-Classification"><span class="nav-number">2.</span> <span class="nav-text">Image Classification</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E5%BD%A2%E9%A2%84%E5%A4%84%E7%90%86"><span class="nav-number">2.1.</span> <span class="nav-text">图形预处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E5%83%8F%E6%95%B0%E6%8D%AE%E7%BB%84%E7%BB%87"><span class="nav-number">2.2.</span> <span class="nav-text">图像数据组织</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Observation"><span class="nav-number">2.3.</span> <span class="nav-text">Observation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Simplification"><span class="nav-number">2.4.</span> <span class="nav-text">Simplification</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Receptive-field"><span class="nav-number">2.4.1.</span> <span class="nav-text">Receptive field</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parameter-sharing"><span class="nav-number">2.4.2.</span> <span class="nav-text">parameter sharing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pooling%EF%BC%88%E6%B1%A0%E5%8C%96"><span class="nav-number">2.4.3.</span> <span class="nav-text">Pooling（池化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Max-Pooling"><span class="nav-number">2.4.3.1.</span> <span class="nav-text">Max Pooling</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mean-Pooling"><span class="nav-number">2.4.3.2.</span> <span class="nav-text">Mean Pooling</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Convolutional-Layers-Poooling"><span class="nav-number">2.4.4.</span> <span class="nav-text">Convolutional Layers + Poooling</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Benefit-of-Convolutional-Layer"><span class="nav-number">3.</span> <span class="nav-text">Benefit of Convolutional Layer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#from-Filter"><span class="nav-number">4.</span> <span class="nav-text">from Filter</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Mutiple-Convolutional-Layers"><span class="nav-number">4.1.</span> <span class="nav-text">Mutiple Convolutional Layers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-2-version-introduction"><span class="nav-number">4.2.</span> <span class="nav-text">the 2 version introduction</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Application"><span class="nav-number">5.</span> <span class="nav-text">Application:</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Alpha-Go"><span class="nav-number">5.1.</span> <span class="nav-text">Alpha Go</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#similarity-between-Go-playing-and-Image"><span class="nav-number">5.1.1.</span> <span class="nav-text">similarity between Go playing and Image</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#More-Applications"><span class="nav-number">5.1.2.</span> <span class="nav-text">More Applications</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
         </aside>
