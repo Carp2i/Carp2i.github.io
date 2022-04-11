@@ -345,11 +345,11 @@ mjx-container[display="true"] + br {
                     </li>
                 
                     <li>
-                        | <a href="/tags/Neural-Network/">Neural Network</a>&nbsp;
+                        | <a href="/tags/Classification/">Classification</a>&nbsp;
                     </li>
                 
                     <li>
-                        | <a href="/tags/Classification/">Classification</a>&nbsp;
+                        | <a href="/tags/Neural-Network/">Neural Network</a>&nbsp;
                     </li>
                 
                     <li>
@@ -367,7 +367,7 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>1k 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.1k 字</span>
         </span>
     
     
@@ -484,6 +484,9 @@ mjx-container[display="true"] + br {
 <li>Vist <a class="link" target="_blank" rel="noopener" href="https://pytorch.org/vision/stable/transforms.html">torchvision.transforms<i class="fas fa-external-link-alt"></i></a> for a list of choices and their corresponding effect. Diversity is encouraged! Usually, stacking multiple transformations leads to better results.</li>
 <li>Coding: fill in <em>train_tfm</em> to gain this effect</li>
 </ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Normally, We don't need augmentations in testing and validation.</span></span><br><span class="line"><span class="comment"># All we need here is to resize the PIL image and transform it into Tensor.</span></span><br><span class="line">test_tfm = transforms.Compose([</span><br><span class="line">    transforms.Resize((<span class="number">128</span>, <span class="number">128</span>)),</span><br><span class="line">    transforms.ToTensor(),</span><br><span class="line">])</span><br><span class="line"></span><br><span class="line"><span class="comment"># However, it is also possible to use augmentation in the testing phase.</span></span><br><span class="line"><span class="comment"># You may use train_tfm to produce a variety of images and then test using ensemble methods</span></span><br><span class="line">train_tfm = transforms.Compose([</span><br><span class="line">    <span class="comment"># Resize the image into a fixed shape (height = width = 128)</span></span><br><span class="line">    transforms.Resize((<span class="number">128</span>, <span class="number">128</span>)),</span><br><span class="line">    <span class="comment"># You may add some transforms here.</span></span><br><span class="line">    <span class="comment"># ToTensor() should be the last one of the transforms.</span></span><br><span class="line">    transforms.ToTensor(),</span><br><span class="line">])</span><br></pre></td></tr></table></figure>
+
+
 <h4 id="Advanced-Data-Augmentation"><a href="#Advanced-Data-Augmentation" class="headerlink" title="Advanced Data Augmentation"></a>Advanced Data Augmentation</h4><p><u><strong><a class="link" target="_blank" rel="noopener" href="https://arxiv.org/pdf/1710.09412.pdf">mixup<i class="fas fa-external-link-alt"></i></a></strong></u></p>
 <p><img src="https://pic.imgdb.cn/item/62539b55239250f7c51c240f.jpg"></p>
 <p>Coding:</p>
@@ -523,11 +526,11 @@ mjx-container[display="true"] + br {
                     </li>
                 
                     <li class="tag-item">
-                        <a href="/tags/Neural-Network/">#Neural Network</a>&nbsp;
+                        <a href="/tags/Classification/">#Classification</a>&nbsp;
                     </li>
                 
                     <li class="tag-item">
-                        <a href="/tags/Classification/">#Classification</a>&nbsp;
+                        <a href="/tags/Neural-Network/">#Neural Network</a>&nbsp;
                     </li>
                 
                     <li class="tag-item">
